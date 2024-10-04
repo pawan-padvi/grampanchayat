@@ -1,0 +1,51 @@
+<div class="services">
+    <h2>Our Services</h2>
+    <p>
+      The Grampanchayat Portal offers a variety of services to the community. Here are some of the key services we provide:
+    </p>
+    <ul>
+      <li>Community Development Programs</li>
+      <li>Public Grievance Redressal</li>
+      <li>Local Governance Information</li>
+      <li>Waste Management Services</li>
+      <li>Health and Sanitation Initiatives</li>
+      <li>Public Works Information</li>
+    </ul>
+    <p>
+      For more information on each service, please contact us or visit the respective sections on our portal.
+    </p>
+  </div>
+  <!-- Button to Open the Modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#postFormModal">
+ Post
+</button>
+
+<!-- The Modal -->
+<div class="modal fade" id="postFormModal" tabindex="-1" aria-labelledby="postFormModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="postFormModalLabel">Create Post</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form [formGroup]="postForm" (ngSubmit)="onSubmit()">
+          
+          <div class="form-group mb-3">
+            <label for="title">Title</label>
+            <input type="text" id="title" class="form-control" formControlName="title">
+          </div>
+
+          <div class="form-group mb-3">
+            <label for="body">Body</label>
+            <textarea id="body" class="form-control" formControlName="body"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary" (click)="onSubmit()">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>

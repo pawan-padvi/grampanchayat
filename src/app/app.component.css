@@ -1,0 +1,31 @@
+.landing-page {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .hero {
+    background-image: url('/public/logo.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+  }
+  
+  .services .card {
+    border: none;
+    transition: transform 0.3s ease;
+  }
+  
+  .services .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .call-to-action {
+    background-color: #004d40;
+    color: white;
+  }
+  
+  .call-to-action .btn-light {
+    background-color: white;
+    color: #004d40;
+  }
+  

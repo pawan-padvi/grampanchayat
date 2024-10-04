@@ -1,0 +1,33 @@
+.dashboard-wrapper {
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  #sidebar {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+  }
+  
+  #content {
+    /* margin-left: 250px; */
+    /* width: calc(100% - 250px); */
+    padding: 20px;
+  }
+  
+  .card {
+    border-radius: 10px;
+  }
+  
+  .card-title {
+    font-weight: bold;
+  }
+  
+  .nav-link {
+    margin: 5px 0;
+  }
+  
+  .navbar {
+    border-bottom: 1px solid #ddd;
+  }
+  

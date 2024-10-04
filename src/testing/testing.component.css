@@ -1,0 +1,14 @@
+table{
+    border: 5px solid blue;
+    padding: 20px;
+}
+table>tbody> tr{
+   font: 1em sans-serif;
+}
+table>tbody>* {
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    font-stretch: expanded;
+}
